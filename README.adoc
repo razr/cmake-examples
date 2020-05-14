@@ -60,7 +60,8 @@ Some specific examples may require other tools including:
 
 * http://clang.llvm.org/[clang]
 
-  $ sudo apt-get install clang-3.6
+  $ sudo apt-get install clang
+  $ sudo apt-get install clang-tools
 
 * https://ninja-build.org/[ninja]
 
