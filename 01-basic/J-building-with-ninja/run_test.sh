@@ -8,4 +8,4 @@ if [ -z $ninja_supported ]; then
 fi
 
 mkdir -p build.ninja && cd build.ninja && \
-    cmake .. -G Ninja && ninja
+    cmake .. -G Ninja $@ && ninja

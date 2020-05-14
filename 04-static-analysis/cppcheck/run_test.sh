@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir -p build && cd build && cmake .. && make analysis
+mkdir -p build && cd build && cmake .. $@ && make analysis

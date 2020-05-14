@@ -64,13 +64,13 @@ do
 
     if [ -f "$dir/run_test.sh" ]; then
         echo "running run_test"
-        cd $dir && $ROOT_DIR/$dir/run_test.sh
+        cd $dir && $ROOT_DIR/$dir/run_test.sh $@
         if [ $? -ne 0 ]; then
             echo "Error running run_test for $dir"
             exit 1
         fi
     else
-        cd $dir && mkdir -p build && cd build && cmake .. && make
+        cd $dir && mkdir -p build && cd build && cmake .. $@ && make
         if [ $? -ne 0 ]; then
             echo "Error running example $dir"
             exit 1

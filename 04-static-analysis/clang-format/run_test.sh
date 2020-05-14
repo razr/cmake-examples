@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir -p build && cd build && cmake .. && make format-check
+mkdir -p build && cd build && cmake .. $@ && make format-check
 RET=$?
 echo "return code was ${RET}"
 if [ ${RET} == "0" ]; then
