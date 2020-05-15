@@ -11,7 +11,9 @@ echo "running examples in $EXAMPLES_DIR"
 
 cd $EXAMPLES_DIR
 
-dirs=(./01-basic/A-hello-cmake \
+dirs=(\
+./00-cmake-env/A-print-cmake-env \
+./01-basic/A-hello-cmake \
 ./01-basic/B-hello-headers \
 ./01-basic/C-static-library \
 ./01-basic/D-shared-library \
