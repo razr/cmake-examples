@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(print-cmake-env LANGUAGES NONE)
+project(print-cmake-vars LANGUAGES NONE)
 
 message("CMAKE_HOST_SYSTEM_NAME:             " ${CMAKE_HOST_SYSTEM_NAME})
 message("CMAKE_SYSTEM_NAME:                  " ${CMAKE_SYSTEM_NAME})
