@@ -6,6 +6,9 @@ project (boost_unit_test)
 
 # find a boost install with the libraries unit_test_framework
 find_package(Boost 1.46.1 REQUIRED COMPONENTS unit_test_framework)
+message ("Boost_VERSION      : ${Boost_VERSION}")
+message ("Boost_INCLUDE_DIRS : ${Boost_INCLUDE_DIRS}")
+message ("Boost_LIBRARY_DIRS : ${Boost_LIBRARY_DIRS}")
 
 # Add an library for the example classes
 add_library(example_boost_unit_test
